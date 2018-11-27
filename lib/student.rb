@@ -35,7 +35,7 @@ class Student
       #binding.pry
     all_students.map do |row|
       student=Student.new_from_db(row)
-      row=student
+      return student
     end
     binding.pry
     all_students
