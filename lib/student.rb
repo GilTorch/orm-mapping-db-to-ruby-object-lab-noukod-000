@@ -39,7 +39,7 @@ class Student
     sql=<<-SQL
       SELECT * FROM students
       WHERE grade=10
-      LIMIT limit
+      LIMIT #{limit}
     SQL
     binding.pry
     DB[:conn].execute(sql,limit).map do |row|
