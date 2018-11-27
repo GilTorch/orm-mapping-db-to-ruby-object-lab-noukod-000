@@ -48,7 +48,8 @@ class Student
   end
 
   def first_student_in_grade_10
-    DB[:conn].execute("SELECT * FROM students WHERE grade=10").first
+    student=DB[:conn].execute("SELECT * FROM students WHERE grade=10").first
+    binding.pry
   end
 
 
