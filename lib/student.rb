@@ -49,8 +49,8 @@ class Student
 
   def self.first_student_in_grade_10
     DB[:conn].execute("SELECT * FROM students WHERE grade=10").map do |row|
-      Student.new_from_db(row) 
-    end
+      Student.new_from_db(row)
+    end.first
     #binding.pry
   end
 
