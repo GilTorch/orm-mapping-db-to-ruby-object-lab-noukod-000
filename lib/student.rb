@@ -19,6 +19,7 @@ class Student
     all_students.map do |row|
       Student.new_from_db(row)
     end
+    all_students
   end
 
   def self.find_by_name(name)
