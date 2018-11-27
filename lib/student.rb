@@ -19,7 +19,6 @@ class Student
     all_students.map do |row|
       Student.new_from_db(row)
     end
-    all_students
   end
 
   def self.all_students_in_grade_9
@@ -27,7 +26,6 @@ class Student
     all_students.map do |row|
       Student.new_from_db(row)
     end
-    all_students
   end
 
   def self.students_below_12th_grade
