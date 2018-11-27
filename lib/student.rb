@@ -62,7 +62,7 @@ class Student
     end.first
   end
 
-  def first_student_in_grade_10 
+  def first_student_in_grade_10
   end
 
   def save
