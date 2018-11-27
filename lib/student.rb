@@ -32,7 +32,6 @@ class Student
 
   def self.students_below_12th_grade
     all_students=DB[:conn].execute("SELECT * FROM students WHERE grade <= 11")
-    binding.pry
   end
 
 
