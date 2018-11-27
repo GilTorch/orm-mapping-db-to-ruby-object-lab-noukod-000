@@ -34,6 +34,8 @@ class Student
     all_students=DB[:conn].execute("SELECT * FROM students WHERE grade <= 11")
     all_students.map do |row|
       student=Student.new_from_db(row)
+      row=student 
+      row
     end
     all_students
   end
