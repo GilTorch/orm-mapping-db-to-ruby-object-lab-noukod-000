@@ -62,7 +62,7 @@ class Student
     end.first
   end
 
-  def first_X_student_in_grade_10
+  def first_X_students_in_grade_10
     DB[:conn].execute("SELECT * FROM students WHERE grade=10").first
   end
 
