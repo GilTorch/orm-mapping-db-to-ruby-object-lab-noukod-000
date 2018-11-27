@@ -47,7 +47,7 @@ class Student
     end
   end
 
-  def first_student_in_grade_10
+  def self.first_student_in_grade_10
     student=DB[:conn].execute("SELECT * FROM students WHERE grade=10").first
     binding.pry
   end
