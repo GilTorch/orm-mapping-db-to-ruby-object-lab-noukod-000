@@ -62,9 +62,7 @@ class Student
     end.first
   end
 
-  def first_X_students_in_grade_10
-    DB[:conn].execute("SELECT * FROM students WHERE grade=10").first
-  end
+
 
   def save
     sql = <<-SQL
