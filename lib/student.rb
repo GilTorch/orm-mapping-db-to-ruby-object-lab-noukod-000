@@ -41,6 +41,7 @@ class Student
       WHERE grade=10
       LIMIT ?
     SQL
+    binding.pry
     DB[:conn].execute(sql,limit).map do |row|
       Student.new_from_db(row)
     end
